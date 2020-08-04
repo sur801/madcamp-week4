@@ -799,8 +799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RaycastPrefab: {fileID: 2800930377318619260, guid: 89ed2fe72cdef5143bdf35d0caf6a50f,
-    type: 3}
+  m_RaycastPrefab: {fileID: 0}
 --- !u!114 &1335839539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -810,17 +809,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1335839533}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8b5e18f249a42449b03723d318e1227, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d4f853936df8d14998fb93fbb131eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HoopPrefab: {fileID: 2800930377318619260, guid: 89ed2fe72cdef5143bdf35d0caf6a50f,
+  m_HoopPrefab: {fileID: 3553271050274793006, guid: 806b9722a44db934e83484ff9845eee7,
     type: 3}
-  <spawnedHoop>k__BackingField: {fileID: 0}
   m_BallPrefab: {fileID: 792064282505700717, guid: e9ae43ad9af94e94a854ed15be5efa2c,
     type: 3}
-  <spawnedBall>k__BackingField: {fileID: 0}
-  isPlaced: 0
-  m_RaycastManager: {fileID: 0}
 --- !u!1 &1405370715
 GameObject:
   m_ObjectHideFlags: 0

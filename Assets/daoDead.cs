@@ -7,6 +7,10 @@ public class daoDead : MonoBehaviour
     Animator animator;
     [SerializeField]
     public GameObject m_BallPrefab;
+    float start;
+    float end;
+    public float FadeTime = 5f;
+    float time = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +43,18 @@ public class daoDead : MonoBehaviour
         PopScript.pos = other.contacts[0].point;
         PopScript.Pop();
         animator.SetBool("hit", true);
+        
+        //Renderer objRenderer = gameObject.GetComponent<Renderer>();
+
+        //objRenderer.materials[0].color.a = 0f;
+        // Color fadeColor = objRenderer.materials[0].color;
+
+        // while(fadeColor.a > 0f){
+        //     fadeColor.a -= Time.deltaTime/FadeTime;
+        //     objRenderer.materials[0].color = fadeColor;
+        // }
+
+        Destroy(gameObject, 3.0f);
         spawnedBall = Instantiate(m_BallPrefab);
 
     }
