@@ -1852,6 +1852,8 @@ GameObject:
   - component: {fileID: 2506845854950624562}
   - component: {fileID: 1339413534098942031}
   - component: {fileID: 4896423895192151474}
+  - component: {fileID: 261511939839564550}
+  - component: {fileID: 3937054223989262412}
   m_Layer: 0
   m_Name: Bazzi_throw
   m_TagString: Untagged
@@ -1931,3 +1933,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9507ae6885423c64aadfcff62eaf0605, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &261511939839564550
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178872043594288626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.02
+  m_Height: 0.06
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.025, z: 0}
+--- !u!114 &3937054223989262412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178872043594288626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b5e79604eb4bc44a319466d958e4c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BallPrefab: {fileID: 0}
+  FadeTime: 2
