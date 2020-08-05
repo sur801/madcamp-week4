@@ -998,7 +998,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d4f853936df8d14998fb93fbb131eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HoopPrefab: {fileID: 4640469937634381617, guid: 462f1adb610309a47ab80fe3050102ad,
+  m_DaoPrefab2: {fileID: 4640469937634381617, guid: 462f1adb610309a47ab80fe3050102ad,
+    type: 3}
+  m_DaoPrefab: {fileID: 4640469937634381617, guid: 462f1adb610309a47ab80fe3050102ad,
+    type: 3}
+  m_BazziPrefab: {fileID: 9178872043594288626, guid: 21f8f908a91adb04f8894557f4f3092d,
+    type: 3}
+  m_BazziPrefab2: {fileID: 9178872043594288626, guid: 21f8f908a91adb04f8894557f4f3092d,
     type: 3}
   m_BallPrefab: {fileID: 792064282505700717, guid: e9ae43ad9af94e94a854ed15be5efa2c,
     type: 3}
