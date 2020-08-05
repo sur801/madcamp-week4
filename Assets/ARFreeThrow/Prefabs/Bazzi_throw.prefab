@@ -1851,8 +1851,9 @@ GameObject:
   - component: {fileID: 8370564230214309704}
   - component: {fileID: 2506845854950624562}
   - component: {fileID: 1339413534098942031}
+  - component: {fileID: 4896423895192151474}
   m_Layer: 0
-  m_Name: Bazzi
+  m_Name: Bazzi_throw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1918,3 +1919,15 @@ MonoBehaviour:
   parentbone: {fileID: 6364247164441960423}
   rigidbody: {fileID: 7401403253874250719, guid: ce866a4f5d36ec24692d3a729333f4f6,
     type: 3}
+--- !u!114 &4896423895192151474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178872043594288626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9507ae6885423c64aadfcff62eaf0605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
