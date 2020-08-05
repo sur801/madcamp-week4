@@ -39,23 +39,26 @@ public class daoDead : MonoBehaviour
     /// <param name="other">The Collision data associated with this collision.</param>
     void OnCollisionEnter(Collision other)
     {
-        Destroy(other.gameObject); // destroy balloon
-        PopScript.pos = other.contacts[0].point;
-        PopScript.Pop();
-        animator.SetBool("hit", true);
+        if (other.gameObject.tag == "ball") {
+            Destroy(other.gameObject); // destroy balloon
+            PopScript.pos = other.contacts[0].point;
+            PopScript.Pop();
+            animator.SetBool("hit", true);
+            
+            //Renderer objRenderer = gameObject.GetComponent<Renderer>();
+
+            //objRenderer.materials[0].color.a = 0f;
+            // Color fadeColor = objRenderer.materials[0].color;
+
+            // while(fadeColor.a > 0f){
+            //     fadeColor.a -= Time.deltaTime/FadeTime;
+            //     objRenderer.materials[0].color = fadeColor;
+            // }
+
+            Destroy(gameObject, 3.0f);
+            spawnedBall = Instantiate(m_BallPrefab);
+        }
         
-        //Renderer objRenderer = gameObject.GetComponent<Renderer>();
-
-        //objRenderer.materials[0].color.a = 0f;
-        // Color fadeColor = objRenderer.materials[0].color;
-
-        // while(fadeColor.a > 0f){
-        //     fadeColor.a -= Time.deltaTime/FadeTime;
-        //     objRenderer.materials[0].color = fadeColor;
-        // }
-
-        Destroy(gameObject, 3.0f);
-        spawnedBall = Instantiate(m_BallPrefab);
 
     }
 

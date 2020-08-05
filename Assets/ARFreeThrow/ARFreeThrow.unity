@@ -812,7 +812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d4f853936df8d14998fb93fbb131eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HoopPrefab: {fileID: 3553271050274793006, guid: 806b9722a44db934e83484ff9845eee7,
+  m_HoopPrefab: {fileID: 4640469937634381617, guid: 462f1adb610309a47ab80fe3050102ad,
     type: 3}
   m_BallPrefab: {fileID: 792064282505700717, guid: e9ae43ad9af94e94a854ed15be5efa2c,
     type: 3}
