@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
 
+    public GameObject gameOver;
     public GameObject healthBar;
     // Start is called before the first frame update
     void Start()
     {
-        
+       gameOver.SetActive(false);
     }
 
     // Update is called once per frame
@@ -32,7 +33,15 @@ public class PlayerControl : MonoBehaviour
     {
         if(other.gameObject.tag == "daoBall") {
             //Destroy(healthBar.gameObject);
-            healthBar.gameObject.transform.localScale -= new Vector3(0.1f, 0 , 1);
+            
+            //healthBar.gameObject.transform.localScale -= new Vector3(0.1f, 0 , 1);
+            if(healthBar.gameObject.transform.localScale.x >= 0.0f) {
+                healthBar.gameObject.transform.localScale -= new Vector3(0.4f, 0 , 1);
+            }else {
+                gameOver.SetActive(true);
+                //healthBar.gameObject.SetActive(false);
+               
+            }
         }
     }
     void OnCollisionEnter(Collision other)
