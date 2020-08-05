@@ -1851,8 +1851,11 @@ GameObject:
   - component: {fileID: 8370564230214309704}
   - component: {fileID: 2506845854950624562}
   - component: {fileID: 1339413534098942031}
+  - component: {fileID: 8599879721390564264}
+  - component: {fileID: 8910422021557052803}
+  - component: {fileID: 8406036518671918112}
   m_Layer: 0
-  m_Name: Bazzi
+  m_Name: Bazzi_throw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1918,3 +1921,44 @@ MonoBehaviour:
   parentbone: {fileID: 6364247164441960423}
   rigidbody: {fileID: 7401403253874250719, guid: ce866a4f5d36ec24692d3a729333f4f6,
     type: 3}
+--- !u!136 &8599879721390564264
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178872043594288626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.02
+  m_Height: 0.07
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.02, z: 0.005}
+--- !u!114 &8910422021557052803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178872043594288626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b5e79604eb4bc44a319466d958e4c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BallPrefab: {fileID: 792064282505700717, guid: e9ae43ad9af94e94a854ed15be5efa2c,
+    type: 3}
+  FadeTime: 2
+--- !u!114 &8406036518671918112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178872043594288626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a884d5cbe329ec4f8df59092709855d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

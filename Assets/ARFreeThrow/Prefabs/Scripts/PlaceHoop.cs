@@ -28,6 +28,42 @@ namespace UnityEngine.XR.ARFoundation.Samples
         public GameObject spawnedHoop { get; private set; }
 
         [SerializeField]
+        [Tooltip("Instantiates this hoop prefab on a plane at the touch location.")]
+        GameObject m_DaoPrefab;
+
+        public GameObject placedPrefabDao
+        {
+            get { return m_DaoPrefab; }
+            set { m_DaoPrefab = value; }
+        }
+
+        public GameObject spawnedDao { get; private set; }
+
+        [SerializeField]
+        [Tooltip("Instantiates this hoop prefab on a plane at the touch location.")]
+        GameObject m_DaoPrefab2;
+
+        public GameObject placedPrefabDao2
+        {
+            get { return m_DaoPrefab2; }
+            set { m_DaoPrefab2 = value; }
+        }
+
+        public GameObject spawnedBazzi { get; private set; }
+
+        [SerializeField]
+        [Tooltip("Instantiates this hoop prefab on a plane at the touch location.")]
+        GameObject m_BazziPrefab;
+
+        public GameObject placedPrefabBazzi
+        {
+            get { return m_BazziPrefab; }
+            set { m_BazziPrefab = value; }
+        }
+
+        public GameObject spawnedDao2 { get; private set; }
+        ///////////////////////////////////////////////////////////////////////////////////////////////////
+        [SerializeField]
         [Tooltip("Instantiates this ball prefab in front of the AR Camera.")]
         GameObject m_BallPrefab;
 
@@ -76,6 +112,18 @@ namespace UnityEngine.XR.ARFoundation.Samples
 
                         spawnedHoop = Instantiate(m_HoopPrefab, hitPose.position, Quaternion.AngleAxis(180, Vector3.up));
                         spawnedHoop.transform.parent = transform.parent;
+
+                        spawnedDao = Instantiate(m_DaoPrefab, hitPose.position, Quaternion.AngleAxis(180, Vector3.up));
+                        spawnedDao.transform.parent = transform.parent;
+                        spawnedDao.transform.Translate(1f, 0, 0);
+
+                        spawnedDao2 = Instantiate(m_DaoPrefab2, hitPose.position, Quaternion.AngleAxis(180, Vector3.up));
+                        spawnedDao2.transform.parent = transform.parent;
+                        spawnedDao2.transform.Translate(0, 0, 1f);
+
+                        spawnedBazzi = Instantiate(m_BazziPrefab, hitPose.position, Quaternion.AngleAxis(180, Vector3.up));
+                        spawnedBazzi.transform.parent = transform.parent;
+                        spawnedBazzi.transform.Translate(0, 0, -1f);
 
                         isPlaced = true;
 
