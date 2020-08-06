@@ -72,7 +72,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
         /// </summary>
         public static event Action onPlacedObject;
 
-        private bool isPlaced = false;
+        public static bool isPlaced = false;
 
         ARRaycastManager m_RaycastManager;
 

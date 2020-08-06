@@ -5,18 +5,35 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
 
+
     public GameObject gameOver;
+    public GameObject gameWin;
     public GameObject healthBar;
+    GameObject myBall;
+    int DaoCnt;
+    int BazziCnt;
+    bool isStarted;
     // Start is called before the first frame update
     void Start()
     {
-       gameOver.SetActive(false);
+        isStarted = false;
+        gameOver.SetActive(false);
+        gameWin.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        isStarted = UnityEngine.XR.ARFoundation.Samples.PlaceHoop.isPlaced;
+        DaoCnt = GameObject.FindGameObjectsWithTag("enemyDao").Length;
+        BazziCnt = GameObject.FindGameObjectsWithTag("enemyBazzi").Length;
+
+        if(DaoCnt == 0 && BazziCnt == 0 && isStarted == true) {
+            // You win
+            gameWin.SetActive(true);
+            myBall = GameObject.FindGameObjectsWithTag("ball")[0];
+            myBall.SetActive(false);
+        }
     }
 
     /// <summary>
@@ -32,14 +49,24 @@ public class PlayerControl : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "daoBall") {
-            //Destroy(healthBar.gameObject);
-            
-            //healthBar.gameObject.transform.localScale -= new Vector3(0.1f, 0 , 1);
-            if(healthBar.gameObject.transform.localScale.x >= 0.0f) {
-                healthBar.gameObject.transform.localScale -= new Vector3(0.4f, 0 , 1);
+ 
+            if(healthBar.gameObject.transform.localScale.x > 0.1f) {
+                healthBar.gameObject.transform.localScale -= new Vector3(0.1f, 0 , 1);
             }else {
-                gameOver.SetActive(true);
-                //healthBar.gameObject.SetActive(false);
+                healthBar.gameObject.transform.localScale -= new Vector3(0.1f, 0 , 1);
+                gameOver.SetActive(true);// set visible to game over text
+                myBall = GameObject.FindGameObjectsWithTag("ball")[0];
+                myBall.SetActive(false);
+                // Game Over
+                for(int i=0 ; i<DaoCnt ; i++) {
+                    GameObject dao = GameObject.FindGameObjectsWithTag("enemyDao")[i];
+                    dao.GetComponent<Animator>().SetBool("over", true);
+                }
+
+                for(int i=0 ; i<BazziCnt ; i++) {
+                    GameObject bazzi = GameObject.FindGameObjectsWithTag("enemyBazzi")[i];
+                    bazzi.GetComponent<Animator>().SetBool("over", true);
+                }              
                
             }
         }

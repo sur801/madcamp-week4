@@ -6,6 +6,9 @@ TagManager:
   tags:
   - ball
   - daoBall
+  - enemyDao
+  - enemyBazzi
+  - sessionOrigin
   layers:
   - Default
   - TransparentFX
