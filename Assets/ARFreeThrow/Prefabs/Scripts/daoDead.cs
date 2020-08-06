@@ -5,6 +5,10 @@ using UnityEngine;
 public class daoDead : MonoBehaviour
 {
     Animator animator;
+    
+    public GameObject portion;
+    public GameObject sizeup;
+
     [SerializeField]
     public GameObject m_BallPrefab;
     float start;
@@ -54,8 +58,15 @@ public class daoDead : MonoBehaviour
             //     fadeColor.a -= Time.deltaTime/FadeTime;
             //     objRenderer.materials[0].color = fadeColor;
             // }
-
+            Vector3 itemPos = gameObject.transform.position;
             Destroy(gameObject, 3.0f);
+            //yield WaitForSeconds(3.0f);
+            if(gameObject.tag == "enemyDao"){
+                 Instantiate(portion, itemPos, Quaternion.identity);
+            } else if(gameObject.tag == "enemyBazzi"){
+                Instantiate(sizeup, itemPos, Quaternion.identity);
+            }
+           
             spawnedBall = Instantiate(m_BallPrefab);
         }
         

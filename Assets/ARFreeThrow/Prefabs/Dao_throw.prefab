@@ -922,7 +922,7 @@ GameObject:
   - component: {fileID: 9138598840719974516}
   m_Layer: 0
   m_Name: Dao_throw
-  m_TagString: Untagged
+  m_TagString: enemyDao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1007,6 +1007,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86b5e79604eb4bc44a319466d958e4c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  portion: {fileID: 4045659303417449464, guid: be431bb9edbf832429ea0df70f3c5447, type: 3}
+  sizeup: {fileID: 4968531263436887099, guid: 01207c49c6280ca4e9243538260e0f0d, type: 3}
   m_BallPrefab: {fileID: 792064282505700717, guid: e9ae43ad9af94e94a854ed15be5efa2c,
     type: 3}
   FadeTime: 2
