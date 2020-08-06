@@ -50,10 +50,10 @@ public class PlayerControl : MonoBehaviour
     {
         if(other.gameObject.tag == "daoBall") {
  
-            if(healthBar.gameObject.transform.localScale.x > 0.1f) {
-                healthBar.gameObject.transform.localScale -= new Vector3(0.1f, 0 , 1);
+            if(healthBar.gameObject.transform.localScale.x > 0.05f) {
+                healthBar.gameObject.transform.localScale -= new Vector3(0.05f, 0 , 1);
             }else {
-                healthBar.gameObject.transform.localScale -= new Vector3(0.1f, 0 , 1);
+                healthBar.gameObject.transform.localScale -= new Vector3(0.05f, 0 , 1);
                 gameOver.SetActive(true);// set visible to game over text
                 myBall = GameObject.FindGameObjectsWithTag("ball")[0];
                 myBall.SetActive(false);
@@ -70,9 +70,7 @@ public class PlayerControl : MonoBehaviour
                
             }
         }
+
     }
-    void OnCollisionEnter(Collision other)
-    {
-        
-    }
+
 }

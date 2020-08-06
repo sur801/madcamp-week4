@@ -62,7 +62,7 @@ public class daoDead : MonoBehaviour
             Destroy(gameObject, 3.0f);
             //yield WaitForSeconds(3.0f);
             if(gameObject.tag == "enemyDao"){
-                 Instantiate(portion, itemPos, Quaternion.identity);
+                Instantiate(portion, itemPos, Quaternion.identity);
             } else if(gameObject.tag == "enemyBazzi"){
                 Instantiate(sizeup, itemPos, Quaternion.identity);
             }
