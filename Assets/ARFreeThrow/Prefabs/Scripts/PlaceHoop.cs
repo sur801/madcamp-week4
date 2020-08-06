@@ -101,15 +101,15 @@ namespace UnityEngine.XR.ARFoundation.Samples
                         
                         spawnedDao2 = Instantiate(m_DaoPrefab2, hitPose.position, Quaternion.AngleAxis(180, Vector3.up));
                         spawnedDao2.transform.parent = transform.parent;
-                        spawnedDao2.transform.Translate(0, 0, -0.8f);
+                        spawnedDao2.transform.Translate(-Random.Range(1.2f, 1.5f), 0, -Random.Range(1.0f, 1.5f));
 
                         spawnedBazzi = Instantiate(m_BazziPrefab, hitPose.position, Quaternion.AngleAxis(180, Vector3.up));
                         spawnedBazzi.transform.parent = transform.parent;
-                        spawnedBazzi.transform.Translate(-0.9f, 0, 0);
+                        spawnedBazzi.transform.Translate(Random.Range(0, 0.8f), 0, -Random.Range(1.5f, 2f));
 
                         spawnedBazzi2 = Instantiate(m_BazziPrefab2, hitPose.position, Quaternion.AngleAxis(180, Vector3.up));
                         spawnedBazzi2.transform.parent = transform.parent;
-                        spawnedBazzi2.transform.Translate(-0.7f, 0, -0.7f);
+                        spawnedBazzi2.transform.Translate(-Random.Range(0, 0.8f), 0, -Random.Range(1.0f, 1.5f));
 
                         isPlaced = true;
 
