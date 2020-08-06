@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7401403253874250719}
   m_Layer: 0
   m_Name: DaoBalloon
-  m_TagString: daoBall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

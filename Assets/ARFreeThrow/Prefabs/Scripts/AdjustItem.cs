@@ -27,11 +27,11 @@ public class AdjustItem : MonoBehaviour
     {
         if(other.gameObject.tag == "ball" && gameObject.tag =="portion"){
             Destroy(gameObject);
-            healthBar.gameObject.transform.localScale += new Vector3(0.1f, 0 , 1);
+            healthBar.gameObject.transform.localScale += new Vector3(0.2f, 0 , 1);
         } else if(other.gameObject.tag == "ball" && gameObject.tag == "sizeup") {
             Destroy(gameObject);
             myBall = GameObject.FindGameObjectsWithTag("ball")[0];
-            myBall.gameObject.transform.localScale +=  new Vector3(0.3f, 0.3f , 0.3f);
+            myBall.gameObject.transform.localScale +=  new Vector3(0.005f, 0.005f , 0.005f);
         }
     }
 }

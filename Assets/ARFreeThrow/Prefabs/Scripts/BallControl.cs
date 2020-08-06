@@ -6,7 +6,7 @@ using UnityEngine.XR.ARFoundation;
 public class BallControl : MonoBehaviour
 {
     // force of the throw
-    public float m_ThrowForce = 100f;
+    public float m_ThrowForce = 200f;
     public float m_ThrowDirectionX = 0.17f;
     public float m_ThrowDirectionY = 0.67f;
     // offset of the ball's position in relation to camera's position

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2374477724898564135}
   m_Layer: 0
   m_Name: SizeUp
-  m_TagString: sizeup
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,4 +108,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dbf972f411c7024bb848875b869b401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}

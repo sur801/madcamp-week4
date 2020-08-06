@@ -1007,8 +1007,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86b5e79604eb4bc44a319466d958e4c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portion: {fileID: 4045659303417449464, guid: be431bb9edbf832429ea0df70f3c5447, type: 3}
-  sizeup: {fileID: 4968531263436887099, guid: 01207c49c6280ca4e9243538260e0f0d, type: 3}
+  portion: {fileID: 8644808234498231740, guid: 6e8865ede1791244a9fc1a851b922940, type: 3}
+  sizeup: {fileID: 3318067069396276978, guid: 0df9b21af78fb994fad2f9bbe63851a0, type: 3}
   m_BallPrefab: {fileID: 7175360188633177221, guid: 4f7da68237faba24da839fa93af36ab6,
     type: 3}
   FadeTime: 2
