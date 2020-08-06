@@ -10,6 +10,6 @@ public class PopScript : MonoBehaviour
 
     
     public static void Pop() {
-        Instantiate(Resources.Load("Smoke"), pos,Quaternion.identity);
+        Instantiate(Resources.Load("CFX4 Hit Paint C (Cyan)"), pos,Quaternion.identity);
     }
 }

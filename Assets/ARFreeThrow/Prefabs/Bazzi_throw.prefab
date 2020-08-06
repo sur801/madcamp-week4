@@ -1916,10 +1916,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f90b6635b3b344c972e18dd061e9ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theballPrefab: {fileID: 3610046849516232497, guid: ce866a4f5d36ec24692d3a729333f4f6,
+  theballPrefab: {fileID: 1763431414011545257, guid: 9cf81d2409b6a0d4fb69c7c461d004c6,
     type: 3}
   parentbone: {fileID: 6364247164441960423}
-  rigidbody: {fileID: 7401403253874250719, guid: ce866a4f5d36ec24692d3a729333f4f6,
+  rigidbody: {fileID: -6678151277069937163, guid: 9cf81d2409b6a0d4fb69c7c461d004c6,
     type: 3}
 --- !u!114 &4896423895192151474
 MonoBehaviour:
@@ -1961,6 +1961,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portion: {fileID: 4045659303417449464, guid: be431bb9edbf832429ea0df70f3c5447, type: 3}
   sizeup: {fileID: 4968531263436887099, guid: 01207c49c6280ca4e9243538260e0f0d, type: 3}
-  m_BallPrefab: {fileID: 792064282505700717, guid: e9ae43ad9af94e94a854ed15be5efa2c,
+  m_BallPrefab: {fileID: 7175360188633177221, guid: 4f7da68237faba24da839fa93af36ab6,
     type: 3}
   FadeTime: 2
