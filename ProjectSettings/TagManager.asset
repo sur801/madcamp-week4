@@ -9,6 +9,9 @@ TagManager:
   - enemyDao
   - enemyBazzi
   - sessionOrigin
+  - portion
+  - sizeup
+  - healthbar
   layers:
   - Default
   - TransparentFX
