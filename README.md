@@ -17,3 +17,27 @@
 
 ## 게임 실행 화면
 1. 시작. 먼저 평면을 인식 하기 위해 휴대폰을 상하좌우로 움직여야 함.  
+<img src="https://user-images.githubusercontent.com/5088280/91379602-07950d00-e85e-11ea-8bd3-7937b1f220db.jpeg" width="150" height="270">  
+
+2. 평면 인식 후, 화면을 탭 하면 random한 위치에 배찌 두명, 다오 두명이 생김.
+<img src="https://user-images.githubusercontent.com/5088280/91379610-0a8ffd80-e85e-11ea-888d-1efa2609e43e.jpeg" width="150" height="270">
+그리고 그 후에, 내 화면을 한번 더 탭하면 앞에 내 물풍선이 생김.  
+
+3. 배찌와 다오가 던지는 물풍선을 맞으면 HP가 줄어듦.
+<img src="https://user-images.githubusercontent.com/5088280/91379618-0c59c100-e85e-11ea-8ade-76f0142ff8f1.jpeg" width="150" height="270">  
+
+4. 다오를 내 물풍선으로 맞추면 넘어지면서 죽고, 그 자리에 포션 아이템이 생김.
+<img src="https://user-images.githubusercontent.com/5088280/91379627-1085de80-e85e-11ea-8906-4f2291c8579b.jpeg" width="150" height="270">  
+
+5. 포션을 먹기 위해서는 포션을 내 물풍선으로 다시 맞춰야 함. 포션을 먹으면 HP가 늘어남.
+<img src="https://user-images.githubusercontent.com/5088280/91379630-124fa200-e85e-11ea-805e-5623ca8eed3f.jpeg" width="150" height="270">  
+
+6. 배찌를 맞추면 내 물풍선 크기를 키워주는 아이템이 생김.
+<img src="https://user-images.githubusercontent.com/5088280/91379632-14196580-e85e-11ea-9815-3b9be2be319e.jpeg" width="150" height="270">  
+
+7. 물풍선 아이템을 먹고나니 물풍선 크기가 커짐.
+<img src="https://user-images.githubusercontent.com/5088280/91379633-154a9280-e85e-11ea-9b98-17e9bd76239e.jpeg" width="150" height="270">  
+
+8. 이긴 화면, 진 화면
+
+<img src="https://user-images.githubusercontent.com/5088280/91382893-bdb02500-e865-11ea-8fcb-a8f066418948.jpeg" width="150" height="270"> <img src="https://user-images.githubusercontent.com/5088280/91382884-b9840780-e865-11ea-9a17-ed2a6bb411b1.jpeg" width="150" height="270"> <img src="https://user-images.githubusercontent.com/5088280/91382890-bb4dcb00-e865-11ea-958d-5e32275cd0d3.jpeg" width="150" height="270">  
