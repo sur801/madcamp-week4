@@ -1,22 +1,4 @@
-# Mad Camp 4th week
-
-**카이스트 몰입 캠프 4주차 프로젝트**  
-
-**프로젝트 명** : AR Bubble Fighter
-
-**프로젝트 기간 :** 2020.07.30 ~ 2020.08.05
-
-**개발 환경 :** Unity, C#, 3d Max
-
-**본인 역할 :** 
-
-- 다오 캐릭터 모델링
-- 물풍선 던지기, 캐릭터와 충돌 애니메이션 구현
-- 물풍선에 맞을 시 HP 줄어 들도록 구현.
-
-
-
-## AR Bubble Fighter
+## AR Bubble fighter
 
 - 추억의 게임 크레이지 아케이드를, Unity를 이용해Ar(Augmented Reality, 증강현실) Mobile 게임으로 구현해 보았다.
 
